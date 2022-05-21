@@ -4,9 +4,3 @@ div.container {
   flex-wrap: wrap;
   outline-style:solid;
 }
-
-div.box {
-  width: 200px;
-  height: 200px;
-  outline-style:solid;
-}
