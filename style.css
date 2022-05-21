@@ -1,12 +1,12 @@
 div.container {
   display:flex;
-  width: 600px;
+  width: 800px;
   flex-wrap: wrap;
   outline-style:solid;
 }
 
 div.box {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   outline-style:solid;
 }

@@ -27,9 +27,30 @@ function highlight(e) {
 
 // button to prompt user for display size
 // limit of 100 (do while loop)
+const btn = document.querySelector("button");
+btn.addEventListener("click", promptUser);
+
+function promptUser() {
+  let width;
+  do {
+    width = prompt("Pick a number between 1-100 for grid width");
+  } while (width > 100 || width < 1);
+  removeChildren();
+};
 
 // remove existing grid
+function removeChildren() {
+  let child = container.lastElementChild; 
+  while (child) {
+    container.removeChild(child);
+    child = container.lastElementChild;
+  };
+};
 // retain original dimensions of grid
+
+// width of new boxes = container.width / width rounded down.
+// calculate the difference between OG cont.width and new cont.width
+// add padding aroung container for consistency.
 
 // replace with new grid of x dimension
 
